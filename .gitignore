@@ -1,8 +1,66 @@
-
-/node_modules
+### Laravel ###
+/vendor/
+/node_modules/
+/public/hot
+/public/storage
+/storage/*.key
+/bootstrap/cache/packages.php
+/bootstrap/cache/services.php
+.env
+.env.*.local
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.fleet
 /.idea
-.env
-.env
-docker-compose.yml
-docker-compose.yml
-.idea/php.xml
+/.vscode
+
+### Docker ###
+docker-compose.override.yml
+docker-compose.yml.backup
+docker-compose.yml.save
+
+### Logs ###
+*.log
+*.log.*
+*.logs
+/storage/logs/*
+!storage/logs/.gitkeep
+
+### Cache ###
+.phpunit.cache
+.cache
+.parcel-cache
+
+### Sessions ###
+/storage/framework/sessions/*
+!storage/framework/sessions/.gitkeep
+
+### Views ###
+/storage/framework/views/*
+!storage/framework/views/.gitkeep
+
+### Testing ###
+/coverage
+.phpunit.result.cache
+
+### OS generated ###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+
+### Composer ###
+composer.lock
+composer.phar
+
+### Deployment ###
+/.env.production
+/.deploy
+/.github/workflows/deploy.yml

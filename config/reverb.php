@@ -25,12 +25,17 @@ return [
     | the array below. You should ensure all the options are present.
     |
     */
+    'cors' => [
+        'allow_origins' => ['*'],
+        'allow_methods' => ['*'],
+        'allow_headers' => ['*'],
+    ],
 
     'servers' => [
 
         'reverb' => [
             'host' => env('REVERB_SERVER_HOST', '0.0.0.0'),
-            'port' => env('REVERB_SERVER_PORT', 8080),
+            'port' => env('REVERB_SERVER_PORT', 8081),
             'path' => env('REVERB_SERVER_PATH', ''),
             'hostname' => env('REVERB_HOST'),
             'options' => [
